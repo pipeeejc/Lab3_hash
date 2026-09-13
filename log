@@ -19,3 +19,14 @@ Sun Sep 13 07:01:09 PM UTC 2026:
  tests:  1|6
 total_score: 5/60
 8fbbf77
+Sun Sep 13 07:12:01 PM UTC 2026: 
+ hashmap.c | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:77:25: error: ‘posicion’ undeclared (first use in this function)
+   77 |         if(map->buckets[posicion]->key == NULL && insert_pos == -1) {
+      |                         ^~~~~~~~
+hashmap.c:77:25: note: each undeclared identifier is reported only once for each function it appears in
+310b67e
