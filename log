@@ -48,3 +48,14 @@ Sun Sep 13 07:18:01 PM UTC 2026:
  tests:  11|2
 total_score: 40/60
 ad5512c
+Sun Sep 13 07:22:05 PM UTC 2026: 
+ hashmap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:150:18: error: ‘HashMap’ {aka ‘struct HashMap’} has no member named ‘curent’; did you mean ‘current’?
+  150 |             map->curent = i;
+      |                  ^~~~~~
+      |                  current
+1c3ce71
