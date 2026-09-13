@@ -75,3 +75,9 @@ hashmap.c:191:17: error: expected expression before ‘=’ token
   191 |     map->size = = 0;
       |                 ^
 66e4f16
+Sun Sep 13 07:26:28 PM UTC 2026: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  16|1
+total_score: 50/60
+7ba7652
