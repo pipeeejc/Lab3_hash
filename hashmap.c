@@ -102,9 +102,20 @@ void insertMap(HashMap * map, char * key, void * value) {
 //   c - Si llega a una casilla nula, retorne NULL inmediatamente (no siga avanzando, la clave no está)
 // Recuerde actualizar el índice current a la posición encontrada. Recuerde que el arreglo es circular.
 
-Pair * searchMap(HashMap * map,  char * key) {   
+Pair * searchMap(HashMap * map,  char * key) {
+    if(map == NULL || key == NULL) return NULL;
 
+    long pos = hash(key, map->capacity);
+    long pos_inicial = pos;
 
+    while(map->buckets[pos] != NULL){
+        if(is_equal(map->buckets[pos]->key, key)){
+            map->current = pos;
+            return map->buckets[pos];
+        }
+        pos = (pos + 1) % map->capacity;
+        if(pos == pos_inicial) break;
+    }
     return NULL;
 }
 
@@ -114,7 +125,8 @@ Pair * searchMap(HashMap * map,  char * key) {
 // No elimine el par, sólo invalídelo asignando NULL a la clave (pair->key=NULL). 
 // Recuerde actualizar la variable size.
 
-void eraseMap(HashMap * map,  char * key) {    
+void eraseMap(HashMap * map,  char * key) {
+    
 
 
 }
