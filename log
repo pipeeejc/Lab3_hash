@@ -2,3 +2,14 @@ Sat Sep 12 12:58:53 AM UTC 2026:
  tests:  0|7
 total_score: 0/60
 d4e3243
+Sun Sep 13 07:00:43 PM UTC 2026: 
+ hashmap.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘createMap’:
+hashmap.c:54:9: error: ‘current’ undeclared (first use in this function)
+   54 |     map-current = -1;
+      |         ^~~~~~~
+hashmap.c:54:9: note: each undeclared identifier is reported only once for each function it appears in
+7806b65
