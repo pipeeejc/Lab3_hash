@@ -65,3 +65,13 @@ Sun Sep 13 07:22:20 PM UTC 2026:
  tests:  16|1
 total_score: 50/60
 8260542
+Sun Sep 13 07:26:17 PM UTC 2026: 
+ hashmap.c | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+Compilation failed
+In file included from test.c:5:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:191:17: error: expected expression before ‘=’ token
+  191 |     map->size = = 0;
+      |                 ^
+66e4f16
