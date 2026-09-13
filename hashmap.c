@@ -126,7 +126,14 @@ Pair * searchMap(HashMap * map,  char * key) {
 // Recuerde actualizar la variable size.
 
 void eraseMap(HashMap * map,  char * key) {
-    
+    if(map == NULL || key == NULL) return;
+
+    Pair * target = searchMap(map, key);
+
+    if(target != NULL) {
+        target->key = NULL;
+        map->size--;
+    }
 
 
 }
